@@ -1,4 +1,8 @@
 torrentmeta
 ===========
 
-torrent file abstraction for node
+Torrent file abstraction for node
+
+depends on bxxcode
+
+MIT License

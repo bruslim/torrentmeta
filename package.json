@@ -1,0 +1,31 @@
+{
+  "name": "torrentmeta",
+  "version": "0.0.1-a",
+  "description": "torrent file abstraction and parser",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "bxxcode": "^0.0.1"
+  },
+  "devDependencies": {
+    "tape": "^2.13.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bruslim/torrentmeta.git"
+  },
+  "keywords": [
+    "torrent"
+  ],
+  "author": "bruslim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bruslim/torrentmeta/issues"
+  },
+  "homepage": "https://github.com/bruslim/torrentmeta"
+}
