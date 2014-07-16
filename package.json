@@ -1,6 +1,6 @@
 {
   "name": "torrentmeta",
-  "version": "0.0.1-a",
+  "version": "0.0.1",
   "description": "torrent file abstraction and parser",
   "main": "index.js",
   "directories": {
