@@ -50,6 +50,11 @@ test("Single File MetaInfo",function(t){
     t.plan(1);
     t.deepEqual(new Buffer('1uzfWLWnV8Z2Xok4Eyw1TY0pb5Y=','base64'),torrent.sha1sum);
   }); 
+  
+  t.test('should produce the info hash for test.torrent', function(t) {
+    t.plan(1);
+    t.deepEqual(new Buffer('S19qPlBJSa/hB1gKZ4RDftCb5So=','base64'),torrent.infoHash);
+  }); 
 });
 
 test("Multi File MetaInfo",function(t){
