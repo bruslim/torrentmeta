@@ -10,6 +10,8 @@ var fs = require('fs');
 
 var path = require('path');
 
+var bigint = require('bigint');
+
 test("Single File MetaInfo",function(t){
   var raw = fs.readFileSync(path.join(__dirname,'test.torrent'));
   var info = MetaInfo.parse(raw);
@@ -18,13 +20,13 @@ test("Single File MetaInfo",function(t){
   t.test('should have values', function(t) {
     t.assert(torrent.info, 'has an info dictionary');
     
-    t.equal(524288,torrent.info["piece length"], "info has a piece length");
+    t.assert(bigint(524288).eq(torrent.info["piece length"]), "info has a piece length");
     
     t.deepEqual(new Buffer('ubuntu-12.04-server-amd64.iso'), torrent.info.name, 'info has a name');
     
-    t.equal(27380,torrent.info.pieces.length, 'info has pieces');
+    t.assert(bigint(27380).eq(torrent.info.pieces.length), 'info has pieces');
     
-    t.equal(717533184,torrent.info.length, 'info has a length');
+    t.assert(bigint(717533184).eq(torrent.info.length), 'info has a length');
     
     t.deepEqual(new Buffer('http://torrent.ubuntu.com:6969/announce'), torrent.announce, 'has an announce');
     

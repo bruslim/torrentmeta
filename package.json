@@ -1,13 +1,13 @@
 {
   "name": "torrentmeta",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "torrent file abstraction and parser",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "dependencies": {
-    "bxxcode": "^0.0.1"
+    "bxxcode-gmp": "~0.0.2"
   },
   "devDependencies": {
     "tape": "^2.13.3"
