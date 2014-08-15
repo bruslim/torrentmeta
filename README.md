@@ -1,9 +1,32 @@
-torrentmeta
-===========
+#torrentmeta
 
-Torrent file abstraction for node
+A nodejs torrent file abstraction module.
 
-depends on bxxcode-gmp (need to support large integers)
 
-MIT License
+To install:
 
+~~~~~~~~~
+npm install torrentmeta
+~~~~~~~~~
+
+
+## Usage
+
+~~~~~~~~~~ js
+// import
+var TorrentMeta = require('torrentmeta');
+
+// parse
+var torrent = TorrentMeta.parse(buffer);
+
+// more oop like
+var torrent = new TorrentMeta(buffer);
+
+// already decoded?
+var torrent = new TorrentMeta(decoded);
+~~~~~~~~~~
+
+
+## Thanks
+
+Made @ [HackerSchool (S'14 June)](https://www.hackerschool.com)
