@@ -29,4 +29,4 @@ var torrent = new TorrentMeta(decoded);
 
 ## Thanks
 
-Made @ [HackerSchool (S'14 June)](https://www.hackerschool.com)
+Made @ [Recurse Center (S'14 June)](https://www.recurse.com)
